@@ -1,0 +1,35 @@
+.sidebarNav{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.sidebarNav:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    opacity: 0.5;
+    color: var(--twitter-color);
+    
+}
+.sidebarNav::before {
+    transition: opacity 1s ease;
+    display:inline-block;
+}
+
+/* Para aplicar sobre los elementos UI */
+.sidebarNav > .MuiSvgIcon-root {
+    padding: 20px;
+
+}
+
+.sidebarNav>h2{
+    font-weight: 900;
+    font-size: 22px;
+
+    margin-right: 20px;
+}
+
+/*Cuando estes en una pestaña al estar activa se vea seleccionada*/
+.sidebarNav--active{
+    color:rgb(9, 211, 9) ;
+}
